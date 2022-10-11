@@ -1,0 +1,30 @@
+#hero{
+    background-image: url("../Images/Mobile/image-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 2rem;
+
+
+    h1{
+        border: 3px solid white;
+        color: white;
+        padding: 0.5em;
+        margin-block: 12.5rem;
+    }
+}
+
+
+
+//DESKTOP VIEW
+@media screen and (min-width: 62.5rem) {
+    #hero{
+        background-image: url("../Images/Desktop/image-hero.jpg");
+
+        h1{
+            margin-inline: 0;
+            width: 55%;
+        }
+    }    
+}

@@ -1,0 +1,71 @@
+//VARIABLES
+$gray: hsl(0, 0%, 55%);
+$dkGray: hsl(0, 0%, 41%);
+
+
+//SETUP
+*,
+*::before,
+*::after{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+
+//FONTS
+h1{
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  font-weight: 300;
+}
+
+a,
+p{
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+p{
+  font-size: 15px;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+
+//GLOBALS
+.wrapper{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.desktop{
+  display: none;
+}
+
+
+//DESKTOP VIEWS
+@media screen and (min-width: 62.5rem) {
+  .wrapper{ 
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .mobile{
+    display:none;
+  }
+
+  .desktop{
+    display: flex;
+  }
+}
