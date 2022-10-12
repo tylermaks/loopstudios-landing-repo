@@ -1,0 +1,32 @@
+#about{ 
+
+    padding: 5rem 2rem 2rem 2rem;
+    position: relative;
+
+    article{
+        background-color: white;
+        padding: 1.75rem;
+        padding-bottom: 0;
+        text-align: center;
+    }
+}
+
+
+.about-img--mobile{ 
+    width: 100%;
+}
+
+
+//DESKTOP VIEWS
+@media screen and (min-width: 62.5rem) {
+    #about{
+        padding: 7.5rem 0; 
+    
+        article{
+            position: absolute;
+            right: 0;
+            bottom: 7rem;
+            width: 50%;
+        }
+    }
+}
