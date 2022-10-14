@@ -1,0 +1,38 @@
+#mobile-menu{
+    display: none;
+    flex-direction: column;
+    gap: 7.5rem;
+
+    position: fixed;
+    background: #000;
+    height: 100%;
+    padding:2rem;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+
+    & .menu{
+        gap: 2rem;
+        align-items: flex-start;
+
+        a{
+            font-family: "Josefin Sans", sans-serif !important;
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.open{
+    display: flex !important;
+}
+
+//DESKTOP VIEW
+@media screen and (min-width: 62.5rem) {
+    .open{ 
+        display:none !important;
+    }
+}
+

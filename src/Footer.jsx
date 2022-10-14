@@ -1,5 +1,5 @@
 import React from "react";
-
+import Menu from "./Components/Menu";
 import logo from "./Assets/Images/logo.svg"
 import facebook from "./Assets/Images/icon-facebook.svg"
 import twitter from "./Assets/Images/icon-twitter.svg"
@@ -11,22 +11,18 @@ import "./Assets/Styles/Footer.scss"
 function Footer(){
     return(
         <footer>
-            <div className="footer-content wrapper">
-                <article>
+            <div className="footer-content flex-column wrapper">
+                <article className="flex-column flex-column--center">
                     <img className="logo" src={logo} alt="Loopstudios Company Logo" />
-                    <div className="menu">
-                        <a href="#about">About</a>
-                        <a href=".App">Careers</a>
-                        <a href=".App">Events</a>
-                        <a href=".App">Products</a>
-                        <a href=".App">Support</a>
-                    </div>
+                    <Menu 
+                        direction="menu--column"
+                    />
                 </article>
-                <div className="social">
-                    <img src={facebook} alt="Facebook Link" />
-                    <img src={twitter} alt="Twitter Link" />
-                    <img src={instagram} alt="Instagram Link" />
-                    <img src={pinterest} alt="Pinterest Link" />
+                <div className="social flex-row-space">
+                    <img src={facebook} className="social-link" alt="Facebook Link" />
+                    <img src={twitter} className="social-link" alt="Twitter Link" />
+                    <img src={instagram} className="social-link" alt="Instagram Link" />
+                    <img src={pinterest} className="social-link" alt="Pinterest Link" />
                 </div>
             </div>
         </footer>

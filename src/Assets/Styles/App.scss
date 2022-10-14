@@ -67,6 +67,36 @@ a{
   margin: 0 auto;
 }
 
+.menu{
+  display: flex;
+  align-items: center;
+
+  &--column{ 
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &--row{
+    justify-content: space-between;
+  }
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &--center{
+    align-items: center;
+  }
+}
+
+.flex-row-space{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
 .desktop{
   display: none;
 }

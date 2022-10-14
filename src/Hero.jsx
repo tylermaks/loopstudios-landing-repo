@@ -3,10 +3,12 @@ import NavBar from "./Components/NavBar";
 
 import "./Assets/Styles/Hero.scss"
 
-function Hero(){
+function Hero({toggleMobileMenu}){
     return(
         <section id="hero">
-            <NavBar />
+            <NavBar 
+                toggleMobileMenu={toggleMobileMenu}
+            />
             <article className="wrapper">
                 <h1>
                     Immersive Experiences That Deliver
